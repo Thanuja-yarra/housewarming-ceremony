@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gruha Pravesham — 15th October | Tiruvuru</title>
+<meta name="description" content="You are cordially invited to the Gruha Pravesham ceremony on 15th October at Tiruvuru.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Noto+Serif+Telugu:wght@500;700&family=Mukta:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --cream:        #FBF3E4;
+    --cream-deep:   #F3E6CC;
+    --maroon:       #6E1B22;
+    --maroon-deep:  #4A1117;
+    --marigold:     #E1861F;
+    --marigold-lt:  #F2A93C;
+    --gold:         #B8862F;
+    --leaf:         #3C5A34;
+    --ink:          #3B2418;
+    --paper-shadow: rgba(74,17,23,0.18);
+  }
+
+  *{ box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    margin:0;
+    background:
+      radial-gradient(ellipse at top, #ffffff 0%, var(--cream) 45%, var(--cream-deep) 100%);
+    color:var(--ink);
+    font-family:'Mukta', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  @media (prefers-reduced-motion: no-preference){
+    .fade-in{ animation: fadeIn 1.1s ease both; }
+    .fade-in.d1{ animation-delay:.15s; }
+    .fade-in.d2{ animation-delay:.35s; }
+    .fade-in.d3{ animation-delay:.55s; }
+    .fade-in.d4{ animation-delay:.75s; }
+  }
+  @keyframes fadeIn{
+    from{ opacity:0; transform:translateY(14px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+
+  a{ color:inherit; }
+
+  /* ---------- Marigold garland strip (signature top border) ---------- */
+  .garland-strip{
+    width:100%;
+    height:46px;
+    background-repeat:repeat-x;
+    background-size:64px 46px;
+    background-image: radial-gradient(circle at 16px 30px, var(--marigold) 0 9px, transparent 10px),
+                       radial-gradient(circle at 48px 14px, var(--marigold-lt) 0 8px, transparent 9px);
+    background-color:transparent;
+  }
+
+  header.hero{
+    position:relative;
+    text-align:center;
+    padding:18px 20px 64px;
+    max-width:900px;
+    margin:0 auto;
+  }
+
+  .eyebrow{
+    letter-spacing:.32em;
+    text-transform:uppercase;
+    font-size:.72rem;
+    color:var(--gold);
+    font-weight:500;
+    margin-top:28px;
+  }
+
+  .telugu-title{
+    font-family:'Noto Serif Telugu', serif;
+    font-weight:700;
+    color:var(--maroon);
+    font-size:clamp(1.6rem, 4.4vw, 2.4rem);
+    margin:10px 0 0;
+  }
+
+  h1.headline{
+    font-family:'Cormorant SC', serif;
+    font-weight:700;
+    color:var(--maroon);
+    font-size:clamp(2.8rem, 9vw, 5.6rem);
+    letter-spacing:.03em;
+    margin:6px 0 0;
+    line-height:1;
+    text-shadow: 0 1px 0 rgba(255,255,255,.6);
+  }
+
+  .headline-rule{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin:22px auto 0;
+    max-width:360px;
+  }
+  .headline-rule .line{ flex:1; height:1px; background:linear-gradient(to right, transparent, var(--gold), transparent); }
+  .headline-rule svg{ width:20px; height:20px; flex-shrink:0; }
+
+  .sub-invite{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:clamp(1.05rem,2.6vw,1.3rem);
+    color:var(--ink);
+    margin:26px auto 0;
+    max-width:520px;
+    line-height:1.6;
+  }
+
+  /* ---------- Kalasham signature illustration ---------- */
+  .kalasham-wrap{
+    margin:44px auto 0;
+    width:min(220px, 46vw);
+  }
+  .kalasham-wrap svg{ width:100%; height:auto; display:block; }
+
+  /* ---------- Photo frame section ---------- */
+  .frame-section{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 20px 70px;
+  }
+  .frame{
+    position:relative;
+    border:2px solid var(--gold);
+    padding:14px;
+    background:#fff;
+    box-shadow:0 18px 40px var(--paper-shadow);
+    border-radius:2px;
+  }
+  .frame::before{
+    content:"";
+    position:absolute; inset:6px;
+    border:1px solid var(--marigold-lt);
+    pointer-events:none;
+  }
+  .frame img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:1px;
+  }
+  .frame-caption{
+    text-align:center;
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    color:var(--maroon);
+    margin-top:16px;
+    font-size:1.02rem;
+  }
+
+  /* ---------- Details section ---------- */
+  section.details{
+    background:var(--maroon);
+    background-image:
+      radial-gradient(ellipse at 50% -10%, rgba(255,255,255,.06), transparent 55%);
+    color:var(--cream);
+    padding:74px 20px 86px;
+    position:relative;
+  }
+  section.details::before, section.details::after{
+    content:"";
+    position:absolute; left:0; right:0; height:1px;
+    background:linear-gradient(to right, transparent, var(--marigold-lt), transparent);
+  }
+  section.details::before{ top:0; }
+  section.details::after{ bottom:0; }
+
+  .details-inner{
+    max-width:760px;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  .details-kicker{
+    font-family:'Cormorant SC', serif;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--marigold-lt);
+    font-size:1rem;
+    margin-bottom:8px;
+  }
+
+  .details-title{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:clamp(1.6rem,4vw,2.2rem);
+    margin:0 0 46px;
+  }
+
+  .detail-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  @media (max-width:680px){
+    .detail-cards{ grid-template-columns:1fr; gap:22px; }
+  }
+
+  .detail-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(232,169,60,.4);
+    border-radius:4px;
+    padding:28px 18px 26px;
+  }
+  .detail-card svg{ width:32px; height:32px; margin-bottom:14px; }
+  .detail-label{
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:.7rem;
+    color:var(--marigold-lt);
+    margin-bottom:8px;
+  }
+  .detail-value{
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.5rem;
+    font-weight:600;
+  }
+  .detail-sub{
+    font-size:.85rem;
+    color:rgba(251,243,228,.72);
+    margin-top:6px;
+    font-family:'Mukta',sans-serif;
+  }
+
+  /* ---------- gallery of decor references ---------- */
+  section.gallery{
+    max-width:1000px;
+    margin:0 auto;
+    padding:80px 20px 40px;
+  }
+  .gallery-title{
+    text-align:center;
+    font-family:'Cormorant SC', serif;
+    color:var(--maroon);
+    font-size:clamp(1.5rem,3.6vw,2.1rem);
+    margin-bottom:44px;
+  }
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+  }
+  @media (max-width:640px){
+    .gallery-grid{ grid-template-columns:1fr; }
+  }
+  .gallery-item{
+    background:#fff;
+    border:1px solid var(--marigold-lt);
+    padding:10px;
+    box-shadow:0 12px 26px var(--paper-shadow);
+  }
+  .gallery-item img{
+    width:100%; height:auto; display:block;
+  }
+  .gallery-item p{
+    text-align:center;
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    color:var(--maroon);
+    margin:14px 4px 4px;
+  }
+
+  /* ---------- footer ---------- */
+  footer{
+    text-align:center;
+    padding:60px 20px 50px;
+    color:var(--maroon-deep);
+  }
+  footer .footer-telugu{
+    font-family:'Noto Serif Telugu', serif;
+    font-size:1.3rem;
+    color:var(--maroon);
+    margin-bottom:10px;
+  }
+  footer .footer-line{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.1rem;
+  }
+  .garland-strip.bottom{ transform:scaleY(-1); }
+
+</style>
+</head>
+<body>
+
+  <div class="garland-strip" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="eyebrow fade-in">You are lovingly invited to</p>
+    <p class="telugu-title fade-in d1">గృహ ప్రవేశం</p>
+    <h1 class="headline fade-in d2">Gruha Pravesham</h1>
+
+    <div class="headline-rule fade-in d3">
+      <span class="line"></span>
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C12 2 8 7 8 11a4 4 0 0 0 8 0c0-4-4-9-4-9Z" fill="#B8862F"/>
+        <path d="M12 15c0 3-4 5-4 5h8s-4-2-4-5Z" fill="#3C5A34"/>
+      </svg>
+      <span class="line"></span>
+    </div>
+
+    <p class="sub-invite fade-in d4">
+      With hearts full of gratitude, we invite you to bless our new home
+      as we perform the sacred Gruha Pravesham and step across its threshold
+      for the very first time.
+    </p>
+
+    <!-- Kalasham signature illustration, echoing the ceremonial pot at the entrance -->
+    <div class="kalasham-wrap fade-in d4" role="img" aria-label="Decorative illustration of a ceremonial kalasham pot topped with a coconut and mango leaves">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <!-- mango leaves -->
+        <g>
+          <path d="M100 70 C88 40 70 26 52 16 C60 40 70 56 90 74 Z" fill="#3C5A34"/>
+          <path d="M100 70 C112 40 130 26 148 16 C140 40 130 56 110 74 Z" fill="#4C6E42"/>
+          <path d="M100 68 C96 34 90 18 82 4 C92 24 98 42 102 70 Z" fill="#3C5A34"/>
+          <path d="M100 68 C104 34 110 18 118 4 C108 24 102 42 98 70 Z" fill="#4C6E42"/>
+        </g>
+        <!-- coconut -->
+        <ellipse cx="100" cy="82" rx="26" ry="30" fill="#C7A16B" stroke="#8A6236" stroke-width="2"/>
+        <path d="M84 66 Q100 58 116 66" stroke="#8A6236" stroke-width="2" fill="none"/>
+        <!-- pot -->
+        <path d="M62 118 Q62 100 100 100 Q138 100 138 118 L132 168 Q132 190 100 190 Q68 190 68 168 Z" fill="#C89B3C" stroke="#8A6A22" stroke-width="2"/>
+        <ellipse cx="100" cy="118" rx="38" ry="10" fill="#DDB456" stroke="#8A6A22" stroke-width="2"/>
+        <circle cx="100" cy="150" r="6" fill="#6E1B22"/>
+        <path d="M60 122 Q100 132 140 122" stroke="#8A6A22" stroke-width="1.5" fill="none" opacity=".6"/>
+        <!-- thread swastika mark, simple dot motif kept abstract -->
+      </svg>
+    </div>
+  </header>
+
+  <section class="frame-section">
+    <div class="frame fade-in">
+      <img src="images/kalasham-entrance.png" alt="Decorated entrance with a kalasham pot, marigold garlands, banana stalks and a rangoli of flowers, set for the Gruha Pravesham ceremony">
+    </div>
+    <p class="frame-caption">The threshold, dressed in marigold and mango leaf, awaits your blessings.</p>
+  </section>
+
+  <section class="details" id="details">
+    <div class="details-inner">
+      <p class="details-kicker fade-in">Save the date</p>
+      <h2 class="details-title fade-in d1">Join us as we begin a new chapter</h2>
+
+      <div class="detail-cards">
+        <div class="detail-card fade-in d1">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="16" rx="2" stroke="#F2A93C" stroke-width="1.6"/><path d="M3 9h18" stroke="#F2A93C" stroke-width="1.6"/><path d="M8 3v4M16 3v4" stroke="#F2A93C" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <div class="detail-label">Date</div>
+          <div class="detail-value">15th October</div>
+          <div class="detail-sub">Thursday</div>
+        </div>
+
+        <div class="detail-card fade-in d2">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#F2A93C" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="#F2A93C" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <div class="detail-label">Muhurtham</div>
+          <div class="detail-value">10:30 AM*</div>
+          <div class="detail-sub">*Please confirm exact timing with the family</div>
+        </div>
+
+        <div class="detail-card fade-in d3">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21Z" stroke="#F2A93C" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="#F2A93C" stroke-width="1.6"/></svg>
+          <div class="detail-label">Venue</div>
+          <div class="detail-value">Tiruvuru</div>
+          <div class="detail-sub">Full address to follow with the family</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2 class="gallery-title">A glimpse of the décor</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in">
+        <img src="images/marigold-toran.png" alt="Marigold and orange flower garlands with golden bells hung across a doorway">
+        <p>Marigold torans at the doorway</p>
+      </div>
+      <div class="gallery-item fade-in d1">
+        <img src="images/pearl-toran.png" alt="Orange and white flower garland with golden and pearl beaded tassels hung above a hallway">
+        <p>Pearl and marigold buntings within</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-telugu">మీ రాక మాకు ఎంతో సంతోషం</p>
+    <p class="footer-line">Your presence would make this new beginning complete.</p>
+  </footer>
+
+  <div class="garland-strip bottom" aria-hidden="true"></div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found — Gruha Pravesham</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Noto+Serif+Telugu:wght@500&family=Mukta:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --cream:        #FBF3E4;
+    --cream-deep:   #F3E6CC;
+    --maroon:       #6E1B22;
+    --marigold-lt:  #F2A93C;
+    --gold:         #B8862F;
+    --ink:          #3B2418;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:radial-gradient(ellipse at top, #ffffff 0%, var(--cream) 45%, var(--cream-deep) 100%);
+    color:var(--ink);
+    font-family:'Mukta', sans-serif;
+    text-align:center;
+    padding:40px 20px;
+  }
+  .card{ max-width:480px; }
+  .telugu{
+    font-family:'Noto Serif Telugu', serif;
+    color:var(--maroon);
+    font-size:1.4rem;
+    margin-bottom:6px;
+  }
+  h1{
+    font-family:'Cormorant SC', serif;
+    color:var(--maroon);
+    font-size:clamp(2.4rem,7vw,3.4rem);
+    margin:0 0 10px;
+  }
+  p{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.15rem;
+    line-height:1.6;
+    margin:0 0 30px;
+  }
+  a.back{
+    display:inline-block;
+    padding:12px 30px;
+    border:1px solid var(--gold);
+    color:var(--maroon);
+    text-decoration:none;
+    font-family:'Mukta', sans-serif;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    font-size:.8rem;
+    border-radius:2px;
+    transition:background .2s ease;
+  }
+  a.back:hover{ background:rgba(232,169,60,.15); }
+  .rule{
+    width:70px; height:1px;
+    background:linear-gradient(to right, transparent, var(--gold), transparent);
+    margin:0 auto 26px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <p class="telugu">క్షమించండి</p>
+    <h1>Page not found</h1>
+    <div class="rule"></div>
+    <p>The page you were looking for has wandered off the invitation.
+       Let's take you back to the Gruha Pravesham details.</p>
+    <a class="back" href="index.html">Return to the invitation</a>
+  </div>
+</body>
+</html>
