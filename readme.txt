@@ -1,6 +1,4 @@
 first commit
-second commit
-third commit
 
 GRUHA PRAVESHAM — INVITATION WEBSITE
 ======================================
