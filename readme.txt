@@ -1,7 +1,4 @@
-first commit
-second commit
-third commit
-
+poll scm 1st trigger
 GRUHA PRAVESHAM — INVITATION WEBSITE
 ======================================
 
